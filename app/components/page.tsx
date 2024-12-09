@@ -84,7 +84,7 @@ export default function Figma() {
     </div>
     <div className="right-img w-full md:w-[420px] pt-4 md:pt-[150px] flex justify-center">
       <Image
-        src="/images/chair large.png"
+        src="/images/Chair large.png"
         alt="logo"
         width={420}
         height={500}
