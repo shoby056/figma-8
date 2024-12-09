@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Script from 'next/script'; // Import the Script component
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,8 +28,13 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Figma Design</title>
-    
-        <script src="https://kit.fontawesome.com/145d2a49f0.js" crossOrigin="anonymous"></script>
+        
+        {/* Use Next.js Script component to load asynchronously */}
+        <Script 
+          src="https://kit.fontawesome.com/145d2a49f0.js" 
+          crossOrigin="anonymous" 
+          strategy="afterInteractive" 
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
