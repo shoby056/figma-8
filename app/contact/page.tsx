@@ -13,7 +13,7 @@ export default function Contact(){
    <div className="right">
      <ul className="hmm flex space-x-2">
        <li className="px-[5px] text-xs">Eng <i className="fa-solid fa-angle-down" aria-hidden="true"></i></li>
-       <li className="px-[5px] text-xs">Faqs</li>
+       <Link href="/Faq">  <li className="px-[5px] text-xs">Faqs</li></Link> 
        <li className="px-[5px] text-xs">
          <i className="fa-solid fa-circle-info" aria-hidden="true"></i> Need Help
        </li>
@@ -49,24 +49,24 @@ height={40}
 
 
 
-{/* 3rd header */}
-<div className="third w-full h-[74px]  flex justify-center items-center">
-<div className="inner-headerr w-4/5 h-[40px] text-black flex justify-between flex-col sm:flex-row">
-
-<div className="lefty flex w-full sm:w-[339px] h-[30px] mt-1 sm:mt-0">
-<ul className="flex flex-wrap sm:flex-nowrap justify-center sm:justify-start">
-<Link href="/components"> <li id="home" className="px-2 text-sm text-[#379393]">Home</li></Link> 
- <Link href="/contact"><li className="px-2 text-sm">Contact</li></Link>
-<Link href="product-page"><li className="px-2 text-sm">Product</li></Link>
-<li className="px-2 text-sm">Pages</li>
-<li className="px-2 text-sm">About</li>
-</ul>
-</div>
-
-<div className="righty w-full sm:w-[168px] h-[40px] text-center sm:text-left">
-<p className="text-[#cccccc]">contact: <span className="num text-black text-sm">(808) 555-0111</span></p>
-</div>
-</div>
+  {/* 3rd header */}
+  <div className="third w-full h-[74px]  flex justify-center items-center">
+  <div className="inner-headerr w-4/5 h-[40px] text-black flex justify-between flex-col sm:flex-row">
+  
+    <div className="lefty flex w-full sm:w-[339px] h-[30px] mt-1 sm:mt-0">
+      <ul className="flex flex-wrap sm:flex-nowrap justify-center sm:justify-start">
+      <Link href="/components"> <li id="home" className="px-2 text-sm text-[#379393]">Home</li></Link> 
+        <Link href="/contact"><li className="px-2 text-sm">Contact</li></Link>
+      <Link href="/product-page"><li className="px-2 text-sm">Product</li></Link> 
+       <Link href="/singleproduct"> <li className="px-2 text-sm">Pages</li></Link> 
+        <li className="px-2 text-sm">About</li>
+      </ul>
+    </div>
+  
+    <div className="righty w-full sm:w-[168px] h-[40px] text-center sm:text-left">
+      <p className="text-[#cccccc]">contact: <span className="num text-black text-sm">(808) 555-0111</span></p>
+    </div>
+  </div>
 </div>
 
 

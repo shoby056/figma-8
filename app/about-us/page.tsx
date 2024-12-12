@@ -1,10 +1,10 @@
-import Image from "next/image"
-import Link from "next/link"
-export default function Singleproduct(){
+import Image from "next/image";
+import Link from "next/link";
+export default function About(){
     return(
         <div>
-   {/* Top Header */}
-   <div className="top-header bg-[#272343] w-full h-[45px] flex justify-center items-center">
+  {/* Top Header */}
+  <div className="top-header bg-[#272343] w-full h-[45px] flex justify-center items-center">
           <div className="inner w-[80%] h-[20px] text-white flex justify-between items-center">
             <p className="left text-sm  pt-[5px] pr-[10px] ">
               <i className="fa-solid fa-check" aria-hidden="true"></i> Free Shipping On All Orders Over $50
@@ -54,7 +54,7 @@ export default function Singleproduct(){
   
     <div className="lefty flex w-full sm:w-[339px] h-[30px] mt-1 sm:mt-0">
       <ul className="flex flex-wrap sm:flex-nowrap justify-center sm:justify-start">
-      <Link href="/components"> <li id="home" className="px-2 text-sm text-[#379393]">Home</li></Link> 
+        <li id="home" className="px-2 text-sm text-[#379393]">Home</li>
         <Link href="/contact"><li className="px-2 text-sm">Contact</li></Link>
       <Link href="/product-page"><li className="px-2 text-sm">Product</li></Link> 
        <Link href="/singleproduct"> <li className="px-2 text-sm">Pages</li></Link> 
@@ -71,160 +71,119 @@ export default function Singleproduct(){
 
 
 
+{/* about */}
 
+<div className="about">
 
+<div className="inner-about">
+    <div className="about-left">
 
+        <h1 className="about-head">About Us - Comforty</h1>
+        <p className="about-para">At Comforty, we believe that the right chair can transform your space and elevate your comfort. Specializing in ergonomic design, premium materials,
+             and modern aesthetics, we craft chairs that seamlessly blend style with functionality. </p>
 
+<button className="coll">View Collection</button>
 
-      {/* section code       */}
-
-<div className="single-main">
-
-<div className="inner-single">
-<div className="single-left">
-
-<Image
-        src="/images/pink chair.png"
-        alt="logo"
-        width={400}
-        height={350}
-        className="single-img"
-      />
-
-
-
-</div>
-<div className="single-right">
-    <h1 className="single-head">Library Stool <br /> Chair</h1>
-<button className="single-up">$20,00 USD</button>
-<hr />
-
-<p className="single-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptate necessitatibus. </p>
-
-<button className="single-down"><i className="fa-solid fa-cart-shopping"></i> Add to Cart</button>
-</div>
-
-
-</div>
-
-</div>
-
-<div className="feature">
-    <h1 className="future">Feature Products</h1>
-   <h1 className="view-all">View All</h1>
-
-</div>
-
-
-
-{/* other section */}
-
-<div className="feature-pics">
-
-
-{/* 1st card */}
-<div className="cardss">
-<div className="feature-card">
-<Image
-        src="/images/pink chair.png"
-        alt="logo"
-        width={190}
-        height={150}
-        className="single-img"
-      />
-      <div className="feature-card-desc">
-       <p>library Stool Chair</p>
-       <p><b>$99</b></p>
-      </div>
-
-
-
-
-</div>
-
-{/* 2nd */}
-<div className="feature-card">
-<Image
-        src="/images/orange chair.png"
-        alt="logo"
-        width={190}
-        height={150}
-        className="single-img"
-      />
-      <div className="feature-card-desc">
-       <p>library Stool Chair</p>
-       <p><b>$99</b></p>
-      </div>
-
-
-
-
-</div>
-
-
-{/* 3rd */}
-
-<div className="feature-card">
-<Image
-        src="/images/sofa.png"
-        alt="logo"
-        width={190}
-        height={150}
-        className="single-img"
-      />
-      <div className="feature-card-desc">
-       <p>library Stool Chair</p>
-       <p><b>$99</b></p>
-      </div>
-
-
-
-
-</div>
-
-{/* 4th */}
-
-<div className="feature-card">
-<Image
-        src="/images/desk chair.png"
-        alt="logo"
-        width={190}
-        height={150}
-        className="single-img"
-      />
-      <div className="feature-card-desc">
-       <p>library Stool Chair</p>
-       <p><b>$99</b></p>
-      </div>
-
-
-
-
-</div>
-
-{/* 5th */}
-<div className="feature-card">
-<Image
+    </div>
+    <Image
         src="/images/new chair.png"
         alt="logo"
-        width={190}
-        height={150}
-        className="single-img"
+        width={480}
+        height={400}
+        className="img-about"
       />
-      <div className="feature-card-desc">
-       <p>library Stool Chair</p>
-       <p><b>$99</b></p>
-      </div>
+
+      
+</div>
+<h1 className="different">What Makes Our Brand Diferent </h1>
+
+<div className="about-cards">
+
+    <div className="about-one">
+    <i className="fa-solid fa-truck" aria-hidden="true"></i>
+    <h1 className="next">Next Day as Standards</h1>
+    <p className="sssss">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione pariatur inventore e</p>
+    </div>
+
+
+    <div className="about-one">
+    <i className="fa-solid fa-circle-check" aria-hidden="true"></i>
+    <h1 className="next">Made by True Artisans</h1>
+    <p className="sssss">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione pariatur inventore e</p>
+    </div>
+
+
+    <div className="about-one">
+    <i className="fa-solid fa-folder" aria-hidden="true"></i>
+    <h1 className="next">Unbeatable Prices</h1>
+    <p className="sssss">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione pariatur inventore e</p>
+    </div>
+
+    <div className="about-one">
+    <i className="fa-solid fa-seedling" aria-hidden="true"></i>
+    <h1 className="next">Recycled Packaging</h1>
+    <p className="sssss">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione pariatur inventore e</p>
+    </div>
+    
+</div>
+
+
+<h1 className="popular">Our Popular Products</h1>
+<div className="nnn">
+<div>
+<Image
+        src="/images/Large.png"
+        alt="logo"
+        width={480}
+        height={500}
+         className="about-imgs"
+      />
+      <p>The Popular Siuted Sofa <br /> $99.00</p>
+
 
 
 
 
 </div>
 
+<div>
+<Image
+        src="/images/black chair.png"
+        alt="logo"
+        width={245}
+        height={200}
+         className="about-imgs"
+      />
+      <p>The Popular Siuted Sofa <br /> $99.00</p>
+
+
+
+
+
+</div>
+
+
+<div>
+<Image
+        src="/images/black.png"
+        alt="logo"
+        width={245}
+        height={200}
+        className="about-imgs"
+      />
+      <p>The Popular Siuted Sofa <br /> $99.00</p>
+
+
+
+
+
 </div>
 
 
 
+
+
+</div>
 
 </div>
 
@@ -287,7 +246,7 @@ export default function Singleproduct(){
           placeholder="Your email"
           className="border border-gray-300 rounded-md p-2 flex-1"
         />
-        <button className="bg-teal-500 text-white rounded-md px-4 py-2 ml-2">
+        <button className="bg-teal-500 text-white rounded-md px-4 py-2 ml-2 h-[47px] mt-[20px]">
           Subscribe
         </button>
       </div>
@@ -320,8 +279,6 @@ export default function Singleproduct(){
 
 
 
-
-
-        </div>
-    )
+</div>
+    );
 }

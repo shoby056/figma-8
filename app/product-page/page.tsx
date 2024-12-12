@@ -12,7 +12,7 @@ export default function Productpage(){
             <div className="right">
               <ul className="hmm flex space-x-2">
                 <li className="px-[5px] text-xs">Eng <i className="fa-solid fa-angle-down" aria-hidden="true"></i></li>
-                <li className="px-[5px] text-xs">Faqs</li>
+                <Link href="/Faq">  <li className="px-[5px] text-xs">Faqs</li></Link> 
                 <li className="px-[5px] text-xs">
                   <i className="fa-solid fa-circle-info" aria-hidden="true"></i> Need Help
                 </li>

@@ -1,12 +1,11 @@
-import Figma from "./components/page";
-import Singleproduct from "./singleproduct/page";
-import Contact from "./contact/page";
+import About from "./about-us/page";
+
 
 export default function Home() {
   return (
    <div>
 
-<Figma/>
+<About/>
   
 
 

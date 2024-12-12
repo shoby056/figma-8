@@ -12,7 +12,7 @@ export default function Figma() {
             <div className="right">
               <ul className="hmm flex space-x-2">
                 <li className="px-[5px] text-xs">Eng <i className="fa-solid fa-angle-down" aria-hidden="true"></i></li>
-                <li className="px-[5px] text-xs">Faqs</li>
+                <Link href="/Faq">  <li className="px-[5px] text-xs">Faqs</li></Link> 
                 <li className="px-[5px] text-xs">
                   <i className="fa-solid fa-circle-info" aria-hidden="true"></i> Need Help
                 </li>
@@ -480,7 +480,7 @@ export default function Figma() {
           placeholder="Your email"
           className="border border-gray-300 rounded-md p-2 flex-1"
         />
-        <button className="bg-teal-500 text-white rounded-md px-4 py-2 ml-2">
+        <button className="bg-teal-500 text-white rounded-md px-4 py-2 ml-2 h-[47px] mt-[20px]">
           Subscribe
         </button>
       </div>

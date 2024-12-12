@@ -1,10 +1,12 @@
-import Image from "next/image"
-import Link from "next/link"
-export default function Singleproduct(){
+
+import Image from "next/image";
+import Link from "next/link";
+export default function Faq(){
     return(
-        <div>
-   {/* Top Header */}
-   <div className="top-header bg-[#272343] w-full h-[45px] flex justify-center items-center">
+<div>
+
+    {/* Top Header */}
+    <div className="top-header bg-[#272343] w-full h-[45px] flex justify-center items-center">
           <div className="inner w-[80%] h-[20px] text-white flex justify-between items-center">
             <p className="left text-sm  pt-[5px] pr-[10px] ">
               <i className="fa-solid fa-check" aria-hidden="true"></i> Free Shipping On All Orders Over $50
@@ -12,7 +14,7 @@ export default function Singleproduct(){
             <div className="right">
               <ul className="hmm flex space-x-2">
                 <li className="px-[5px] text-xs">Eng <i className="fa-solid fa-angle-down" aria-hidden="true"></i></li>
-                <Link href="/Faq">  <li className="px-[5px] text-xs">Faqs</li></Link> 
+             <Link href="/Faq">  <li className="px-[5px] text-xs">Faqs</li></Link> 
                 <li className="px-[5px] text-xs">
                   <i className="fa-solid fa-circle-info" aria-hidden="true"></i> Need Help
                 </li>
@@ -71,163 +73,82 @@ export default function Singleproduct(){
 
 
 
+<div className="faq w-4/5 h-auto mx-auto my-8">
+  <div className="faq-main-text w-full md:w-[710px] h-auto mx-auto">
+    <h1 className="head-faq text-2xl text-center pb-4">Questions Look Here</h1>
+    <div className="para-faq flex">
+      <p className="left-para-faq text-sm pt-8 w-full md:w-[630px]">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, distinctio atque quidem animi mag
+      </p>
+    </div>
+  </div>
 
-
-
-
-
-      {/* section code       */}
-
-<div className="single-main">
-
-<div className="inner-single">
-<div className="single-left">
-
-<Image
-        src="/images/pink chair.png"
-        alt="logo"
-        width={400}
-        height={350}
-        className="single-img"
-      />
-
-
-
-</div>
-<div className="single-right">
-    <h1 className="single-head">Library Stool <br /> Chair</h1>
-<button className="single-up">$20,00 USD</button>
-<hr />
-
-<p className="single-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptate necessitatibus. </p>
-
-<button className="single-down"><i className="fa-solid fa-cart-shopping"></i> Add to Cart</button>
-</div>
-
-
-</div>
-
-</div>
-
-<div className="feature">
-    <h1 className="future">Feature Products</h1>
-   <h1 className="view-all">View All</h1>
-
-</div>
-
-
-
-{/* other section */}
-
-<div className="feature-pics">
-
-
-{/* 1st card */}
-<div className="cardss">
-<div className="feature-card">
-<Image
-        src="/images/pink chair.png"
-        alt="logo"
-        width={190}
-        height={150}
-        className="single-img"
-      />
-      <div className="feature-card-desc">
-       <p>library Stool Chair</p>
-       <p><b>$99</b></p>
+  <div className="inner-faq w-full h-auto flex flex-wrap justify-center gap-4 mt-2">
+    <div className="faq-left w-full sm:w-[450px] h-auto md:h-[550px] mx-2">
+      <div className="inner-left-text w-full h-auto sm:w-[450px] md:h-[150px] bg-gray-200 mt-8 mb-8 rounded-md">
+        <div className="yr flex justify-between h-auto md:h-[50px] pt-1">
+          <h1 className="texta pl-2 font-bold text-lg">What type of chairs do you offer</h1>
+          <p className="faq-icon pr-2"><i className="fa-solid fa-plus" aria-hidden="true"></i></p>
+        </div>
+        <p className="lorems text-justify text-sm px-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto atque veritatis, laboriosam molestias, accusantium animi corrupti dicta repudiandae a asperiores illo minus
+        </p>
       </div>
 
-
-
-
-</div>
-
-{/* 2nd */}
-<div className="feature-card">
-<Image
-        src="/images/orange chair.png"
-        alt="logo"
-        width={190}
-        height={150}
-        className="single-img"
-      />
-      <div className="feature-card-desc">
-       <p>library Stool Chair</p>
-       <p><b>$99</b></p>
+      <div className="inner-left-text w-full h-auto sm:w-[450px] md:h-[150px] bg-gray-200 mt-8 mb-8 rounded-md">
+        <div className="yr flex justify-between h-auto md:h-[50px] pt-1">
+          <h1 className="texta pl-2 font-bold text-lg">What type of chairs do you offer</h1>
+          <p className="faq-icon pr-2"><i className="fa-solid fa-plus" aria-hidden="true"></i></p>
+        </div>
+        <p className="lorems text-justify text-sm px-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto atque veritatis, laboriosam molestias, accusantium animi corrupti dicta repudiandae a asperiores illo minus
+        </p>
       </div>
 
+      <div className="inner-left-text w-full h-auto sm:w-[450px] md:h-[150px] bg-gray-200 mt-8 mb-8 rounded-md">
+        <div className="yr flex justify-between h-auto md:h-[50px] pt-1">
+          <h1 className="texta pl-2 font-bold text-lg">What type of chairs do you offer</h1>
+          <p className="faq-icon pr-2"><i className="fa-solid fa-plus" aria-hidden="true"></i></p>
+        </div>
+        <p className="lorems text-justify text-sm px-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto atque veritatis, laboriosam molestias, accusantium animi corrupti dicta repudiandae a asperiores illo minus
+        </p>
+      </div>
+    </div>
 
-
-
-</div>
-
-
-{/* 3rd */}
-
-<div className="feature-card">
-<Image
-        src="/images/sofa.png"
-        alt="logo"
-        width={190}
-        height={150}
-        className="single-img"
-      />
-      <div className="feature-card-desc">
-       <p>library Stool Chair</p>
-       <p><b>$99</b></p>
+    <div className="faq-left w-full sm:w-[450px] h-auto md:h-[550px] mx-2">
+      <div className="inner-left-text w-full h-auto sm:w-[450px] md:h-[150px] bg-gray-200 mt-8 mb-8 rounded-md">
+        <div className="yr flex justify-between h-auto md:h-[50px] pt-1">
+          <h1 className="texta pl-2 font-bold text-lg">What type of chairs do you offer</h1>
+          <p className="faq-icon pr-2"><i className="fa-solid fa-plus" aria-hidden="true"></i></p>
+        </div>
+        <p className="lorems text-justify text-sm px-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto atque veritatis, laboriosam molestias, accusantium animi corrupti dicta repudiandae a asperiores illo minus
+        </p>
       </div>
 
-
-
-
-</div>
-
-{/* 4th */}
-
-<div className="feature-card">
-<Image
-        src="/images/desk chair.png"
-        alt="logo"
-        width={190}
-        height={150}
-        className="single-img"
-      />
-      <div className="feature-card-desc">
-       <p>library Stool Chair</p>
-       <p><b>$99</b></p>
+      <div className="inner-left-text w-full h-auto sm:w-[450px] md:h-[150px] bg-gray-200 mt-8 mb-8 rounded-md">
+        <div className="yr flex justify-between h-auto md:h-[50px] pt-1">
+          <h1 className="texta pl-2 font-bold text-lg">What type of chairs do you offer</h1>
+          <p className="faq-icon pr-2"><i className="fa-solid fa-plus" aria-hidden="true"></i></p>
+        </div>
+        <p className="lorems text-justify text-sm px-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto atque veritatis, laboriosam molestias, accusantium animi corrupti dicta repudiandae a asperiores illo minus
+        </p>
       </div>
 
-
-
-
-</div>
-
-{/* 5th */}
-<div className="feature-card">
-<Image
-        src="/images/new chair.png"
-        alt="logo"
-        width={190}
-        height={150}
-        className="single-img"
-      />
-      <div className="feature-card-desc">
-       <p>library Stool Chair</p>
-       <p><b>$99</b></p>
+      <div className="inner-left-text w-full h-auto sm:w-[450px] md:h-[150px] bg-gray-200 mt-8 mb-8 rounded-md">
+        <div className="yr flex justify-between h-auto md:h-[50px] pt-1">
+          <h1 className="texta pl-2 font-bold text-lg">What type of chairs do you offer</h1>
+          <p className="faq-icon pr-2"><i className="fa-solid fa-plus" aria-hidden="true"></i></p>
+        </div>
+        <p className="lorems text-justify text-sm px-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto atque veritatis, laboriosam molestias, accusantium animi corrupti dicta repudiandae a asperiores illo minus
+        </p>
       </div>
-
-
-
-
+    </div>
+  </div>
 </div>
-
-</div>
-
-
-
-
-</div>
-
 
 
 {/* footer */}
@@ -287,7 +208,7 @@ export default function Singleproduct(){
           placeholder="Your email"
           className="border border-gray-300 rounded-md p-2 flex-1"
         />
-        <button className="bg-teal-500 text-white rounded-md px-4 py-2 ml-2">
+        <button className="bg-teal-500 text-white rounded-md px-4 py-2 ml-2 h-[47px] mt-[20px]">
           Subscribe
         </button>
       </div>
@@ -322,6 +243,6 @@ export default function Singleproduct(){
 
 
 
-        </div>
-    )
+</div>
+    );
 }
