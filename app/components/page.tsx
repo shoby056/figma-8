@@ -58,7 +58,7 @@ export default function Figma() {
         <Link href="/contact"><li className="px-2 text-sm">Contact</li></Link>
       <Link href="/product-page"><li className="px-2 text-sm">Product</li></Link> 
        <Link href="/singleproduct"> <li className="px-2 text-sm">Pages</li></Link> 
-<Link href="/about-us"></Link><li className="px-2 text-sm">About</li></Link>
+        <li className="px-2 text-sm">About</li>
       </ul>
     </div>
   
