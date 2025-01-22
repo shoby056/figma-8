@@ -70,28 +70,63 @@
 
   
 }
-.nine{
-  width:100% ;
-  height: 1100px;
-  
+/* Default styles */
+.nine {
+  width: 100%;
+  height: 1000px;
 }
-.inner-nine{
+
+.inner-nine {
   width: 80%;
   height: 700px;
- 
   margin-left: auto;
   margin-right: auto;
-  
-  
 }
-.first{
+
+.first {
   width: 100%;
   height: 320px;
-
   margin-left: auto;
   margin-right: auto;
   display: flex;
 }
+
+/* Media Queries */
+
+/* For devices with width 768px or less (Tablets, small screens) */
+@media (max-width: 768px) {
+  .nine {
+    height: 800px;  /* Reduce height for smaller screens */
+  }
+
+  .inner-nine {
+    width: 90%; /* Increase width for smaller screens */
+    height: 500px; /* Adjust height */
+  }
+
+  .first {
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Allow height to adjust to content */
+  }
+}
+
+/* For devices with width 480px or less (Mobile phones) */
+@media (max-width: 480px) {
+  .nine {
+    height: 3900px;  /* Further reduce height for mobile */
+  }
+
+  .inner-nine {
+    width: 95%;  /* Use more width for mobile screens */
+    height: 400px; /* Adjust height for mobile */
+  }
+
+  .first {
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Allow flexible height */
+  }
+}
+
 
 /* footer */
 /* footer{

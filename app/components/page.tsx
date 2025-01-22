@@ -1,72 +1,12 @@
-import Link from "next/link";
+import Footer from "../footer/page";
+
 import Image from "next/image";
+import Headers from "../headers/page";
 export default function Figma() {
     return (
       <div>
-        {/* Top Header */}
-        <div className="top-header bg-[#272343] w-full h-[45px] flex justify-center items-center">
-          <div className="inner w-[80%] h-[20px] text-white flex justify-between items-center">
-            <p className="left text-sm  pt-[5px] pr-[10px] ">
-              <i className="fa-solid fa-check" aria-hidden="true"></i> Free Shipping On All Orders Over $50
-            </p>
-            <div className="right">
-              <ul className="hmm flex space-x-2">
-                <li className="px-[5px] text-xs">Eng <i className="fa-solid fa-angle-down" aria-hidden="true"></i></li>
-                <Link href="/Faq">  <li className="px-[5px] text-xs">Faqs</li></Link> 
-                <li className="px-[5px] text-xs">
-                  <i className="fa-solid fa-circle-info" aria-hidden="true"></i> Need Help
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-
-        {/* 2nd header */}
-
-        <div className="w-full h-[84px] bg-[#F0F2F3] flex justify-center items-center">
-  <div className="w-4/5 h-[40px] text-black flex justify-between">
-    <div className="flex">
-      <Image
-        src="/images/chair.png"
-        alt="logo"
-        width={40}
-        height={40}
-      />
-      <h1 className="text-2xl pl-1 pt-1">Comforty</h1>
-    </div>
-
-    <div className="w-[120px] h-[44px] bg-white flex justify-between p-2.5 rounded-xl">
-      <p><i className="fa-solid fa-cart-shopping" aria-hidden="true"></i></p>
-      <p>Cart</p>
-      <p className=" bg-green-800 w-[30px] h-[30px] rounded-full  text-white text-center">2</p>
-    </div>
-  </div>
-</div>
-
-     
-
-
-
-     {/* 3rd header */}
-     <div className="third w-full h-[74px]  flex justify-center items-center">
-  <div className="inner-headerr w-4/5 h-[40px] text-black flex justify-between flex-col sm:flex-row">
-  
-    <div className="lefty flex w-full sm:w-[339px] h-[30px] mt-1 sm:mt-0">
-      <ul className="flex flex-wrap sm:flex-nowrap justify-center sm:justify-start">
-        <li id="home" className="px-2 text-sm text-[#379393]">Home</li>
-        <Link href="/contact"><li className="px-2 text-sm">Contact</li></Link>
-      <Link href="/product-page"><li className="px-2 text-sm">Product</li></Link> 
-       <Link href="/singleproduct"> <li className="px-2 text-sm">Pages</li></Link> 
-        <li className="px-2 text-sm">About</li>
-      </ul>
-    </div>
-  
-    <div className="righty w-full sm:w-[168px] h-[40px] text-center sm:text-left">
-      <p className="text-[#cccccc]">contact: <span className="num text-black text-sm">(808) 555-0111</span></p>
-    </div>
-  </div>
-</div>
+     {/* headers */}
+     <Headers/>
 
 
 
@@ -95,7 +35,7 @@ export default function Figma() {
 
 
 
-<div className="w-full h-[139px]">
+<div className="w-full h-[200px]">
   <div className="w-full lg:w-4/5 h-full mx-auto flex flex-wrap justify-between">
     <div className="pt-[26px] w-1/3 sm:w-1/4 md:w-1/6 lg:w-1/6">
       <Image
@@ -167,7 +107,7 @@ export default function Figma() {
 
     <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
       {/* Card 1 */}
-      <div className="w-full h-[300px]">
+      <div className="w-full h-[330px]">
         <Image
           src="/images/new chair.png"
           alt="logo"
@@ -182,14 +122,14 @@ export default function Figma() {
               $20
             </p>
           </div>
-          <div className="w-12 h-10 bg-gray-200 flex justify-center items-center rounded-lg mt-2 mr-2">
-            <i className="fa-solid fa-cart-shopping text-xl" aria-hidden="true"></i>
+          <div className="w-12 h-10 bg-gray-200 flex justify-center items-center rounded-lg  mr-2 ">
+            <i className="fa-solid fa-cart-shopping text-xl px]" aria-hidden="true"></i>
           </div>
         </div>
       </div>
 
       {/* Card 2 */}
-      <div className="w-full h-[300px]">
+      <div className="w-full h-[330px]">
         <Image
           src="/images/pink chair.png"
           alt="logo"
@@ -204,14 +144,14 @@ export default function Figma() {
               $20
             </p>
           </div>
-          <div className="w-12 h-10 bg-gray-200 flex justify-center items-center rounded-lg mt-2 mr-2">
+          <div className="w-12 h-10 bg-gray-200 flex justify-center items-center rounded-lg  mr-2">
             <i className="fa-solid fa-cart-shopping text-xl" aria-hidden="true"></i>
           </div>
         </div>
       </div>
 
       {/* Card 3 */}
-      <div className="w-full h-[300px]">
+      <div className="w-full h-[330px]">
         <Image
           src="/images/orange chair.png"
           alt="logo"
@@ -226,14 +166,14 @@ export default function Figma() {
               $20
             </p>
           </div>
-          <div className="w-12 h-10 bg-gray-200 flex justify-center items-center rounded-lg mt-2 mr-2">
+          <div className="w-12 h-10 bg-gray-200 flex justify-center items-center rounded-lg  mr-2">
             <i className="fa-solid fa-cart-shopping text-xl" aria-hidden="true"></i>
           </div>
         </div>
       </div>
 
       {/* Card 4 */}
-      <div className="w-full h-[300px]">
+      <div className="w-full h-[330px]">
         <Image
           src="/images/white chair.png"
           alt="logo"
@@ -248,7 +188,7 @@ export default function Figma() {
               $20
             </p>
           </div>
-          <div className="w-12 h-10 bg-gray-200 flex justify-center items-center rounded-lg mt-2 mr-2">
+          <div className="w-12 h-10 bg-gray-200 flex justify-center items-center rounded-lg  mr-2">
             <i className="fa-solid fa-cart-shopping text-xl" aria-hidden="true"></i>
           </div>
         </div>
@@ -315,64 +255,81 @@ export default function Figma() {
 
 
 {/* 8th section */}
-<div className="eight">
-<div className="inner-eight">
-<div className="left-panel">
-      <p>EXPLORE NEW AND POPULAR STYLES</p>
+<div className='px-4 sm:px-8 md:px-32 py-8 max-w-screen-2xl m-auto'>
+      {/* Explore Styles Section */}
+      <section className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-20 py-16 max-w-screen-xl m-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+          {/* Left Section: Image with vertical text */}
+          <div className="relative flex items-center justify-center">
+            <p className="mt-80 mr-6 absolute transform  -rotate-90 pt-16 origin-bottom-left text-2xl  md:block text-gray-900 font-semibold tracking-wide md:left-0">
+              Explore New and Popular Styles
+            </p>
+            <div className="w-full lg:w-[585px] flex justify-center items-center">
+              <Image
+                src="/images/orange chair.png"
+                alt="Main Chair"
+                width={644}
+                height={644}
+                className="object-contain"
+              />
+            </div>
+          </div>
+          {/* Right Section: Smaller Grid */}
+          {/* <div className="grid grid-cols-2 gap-4">
+            {["01", "02", "20", "20"].map((chair, index) => (
+              <div key={index} className="relative hover:shadow-lg overflow-hidden">
+                <Image
+                  src={`/${chair}.png`}
+                  alt={`Chair ${index + 1}`}
+                  width={284}
+                  height={284}
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div> */}
+          <div className="grid grid-cols-2 gap-4">
+  <div className="relative hover:shadow-lg overflow-hidden">
+    <Image
+      src="/images/white chair.png"
+      alt="Chair 1"
+      width={284}
+      height={284}
+      className="object-cover"
+    />
+  </div>
+  <div className="relative hover:shadow-lg overflow-hidden">
+    <Image
+     src="/images/sofa.png"
+      alt="Chair 2"
+      width={284}
+      height={284}
+      className="object-cover"
+    />
+  </div>
+  <div className="relative hover:shadow-lg overflow-hidden">
+    <Image
+    src="/images/new chair.png"
+      alt="Chair 3"
+      width={284}
+      height={284}
+      className="object-cover"
+    />
+  </div>
+  <div className="relative hover:shadow-lg overflow-hidden">
+    <Image
+      src="/images/new chair.png"
+      alt="Chair 4"
+      width={284}
+      height={284}
+      className="object-cover"
+    />
+  </div>
+</div>
+
+        </div>
+      </section>
     </div>
-<div className="left-eight">
-<Image
-        src="/images/orange chair.png"
-        alt="logo"
-        width={500}
-        height={550}
-        className="web"
-      />
-
-</div>
-
-
-<div className="right-eight">
-
-
-<div className="inner-eight-left">
-<Image
-        src="/images/white chair.png"
-        alt="logo"
-        width={230}
-        height={230}
-        className="web"
-      />
-
-<Image
-        src="/images/sofa.png"
-        alt="logo"
-        width={230}
-        height={230}
-        className="web"
-      />
-      </div>
-<div className="inner-eight-right">
-<Image
-        src="/images/new chair.png"
-        alt="logo"
-        width={230}
-        height={230}
-        className="web"
-      />
-      <Image
-        src="/images/new chair.png"
-        alt="logo"
-        width={230}
-        height={230}
-        className="web"
-      />
-      </div>
-
-</div>
-</div>
-</div>
-
 
 
 {/* 9th container */}
@@ -386,7 +343,7 @@ export default function Figma() {
     <div className="flex flex-wrap justify-between">
       {/* Card List */}
       {[
-        "/images/new chair.png",
+        "/images/orange chair.png",
         "/images/pink chair.png",
         "/images/orange chair.png",
         "/images/white chair.png",
@@ -423,92 +380,7 @@ export default function Figma() {
 </div>
 
 
-{/* footer */}
-
-<footer className="bg-white w-full border-t-2 border-gray-200">
-  {/* Main Footer Content */}
-  <div className="flex flex-wrap justify-around py-10 px-4 space-y-8 lg:space-y-0">
-    {/* Column 1 */}
-    <div className="w-full lg:w-1/4 px-4">
-      <div className="flex items-center font-bold">
-        <Image
-          src="/images/chair.png"
-          alt="Image"
-          width={40}
-          height={40}
-          className="mr-2"
-        />
-        <p className="text-lg">Comforty</p>
-      </div>
-      <p className="text-sm text-gray-500 mt-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ipsum obc
-      </p>
-      <div className="flex space-x-3 mt-4 text-lg text-gray-400">
-        <i className="fa-brands fa-facebook" aria-hidden="true"></i>
-        <i className="fa-brands fa-linkedin" aria-hidden="true"></i>
-        <i className="fa-brands fa-square-twitter" aria-hidden="true"></i>
-        <i className="fa-brands fa-github" aria-hidden="true"></i>
-      </div>
-    </div>
-
-    {/* Column 2 */}
-    <div className="w-full lg:w-1/4 px-4">
-      <p className="text-gray-400 font-bold mb-4">CATEGORY</p>
-      <p className="text-sm text-gray-600 mb-2">Sofa</p>
-      <p className="text-sm text-gray-600 mb-2">Armchair</p>
-      <p className="text-sm text-gray-600 mb-2">Wing Chair</p>
-      <p className="text-sm text-gray-600 mb-2">Desk Chair</p>
-      <p className="text-sm text-gray-600 mb-2">Wooden Chair</p>
-      <p className="text-sm text-gray-600 mb-2">Park Chair</p>
-    </div>
-
-    {/* Column 3 */}
-    <div className="w-full lg:w-1/4 px-4">
-      <p className="text-gray-400 font-bold mb-4">SUPPORT</p>
-      <p className="text-sm text-gray-600 mb-2">Help and Support</p>
-      <p className="text-sm text-gray-600 mb-2">Terms and Conditions</p>
-      <p className="text-sm text-gray-600 mb-2">Privacy and Policy</p>
-      <p className="text-sm text-gray-600 mb-2">Help</p>
-    </div>
-
-    {/* Column 4 */}
-    <div className="w-full lg:w-1/4 px-4">
-      <h1 className="text-sm text-gray-400 mb-4">NEWSLETTER</h1>
-      <div className="flex">
-        <input
-          type="text"
-          placeholder="Your email"
-          className="border border-gray-300 rounded-md p-2 flex-1"
-        />
-        <button className="bg-teal-500 text-white rounded-md px-4 py-2 ml-2 h-[47px] mt-[20px]">
-          Subscribe
-        </button>
-      </div>
-      <p className="text-sm text-gray-500 mt-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ipsum obc
-      </p>
-    </div>
-  </div>
-
-  <hr className="border-gray-200" />
-
-  {/* Footer Bottom */}
-  <div className="flex flex-wrap justify-between items-center px-6 py-4 text-sm text-gray-500">
-    <p className="w-full lg:w-auto text-center lg:text-left mb-4 lg:mb-0">
-      @ 2021 - Blogy - Designed & Developed by{" "}
-      <span className="text-black">Zakirsoft</span>
-    </p>
-    <div className="w-full lg:w-auto flex justify-center lg:justify-end">
-      <Image
-        src="/images/logo.png"
-        alt="Image"
-        width={150}
-        height={150}
-        className="w-32"
-      />
-    </div>
-  </div>
-</footer>
+<Footer/>
 
 
 
