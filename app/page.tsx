@@ -1,21 +1,12 @@
 
-
-import Cart from "./cart/page";
-
-
-
-
+import Figma from "./components/page";
 export default function Home() {
   return (
    <div>
 
-<Cart/>
-  
+<Figma/>
 
 
-  
-  
- 
    </div>
   );
 }

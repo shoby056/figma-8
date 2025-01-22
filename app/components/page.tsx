@@ -5,8 +5,8 @@ import Headers from "../headers/page";
 export default function Figma() {
     return (
       <div>
-     {/* headers */}
-     <Headers/>
+        {/* Top Header */}
+       <Headers/>
 
 
 
